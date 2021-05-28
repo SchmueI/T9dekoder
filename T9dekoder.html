@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Rufnummergenerator</title>
+		<meta charset="utf-8" />
 	</head>
 	<body>
 		<center><h1>Rufnummer zu Wort</h1></center>
@@ -28,6 +29,7 @@
 				var fr=new FileReader();
 				fr.onload=function(){
 					liste=fr.result.split("\n")
+					calc()
 				}
 	
 				fr.readAsText(this.files[0]);
